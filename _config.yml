@@ -1,0 +1,21 @@
+include: 
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+plugins:
+  - jekyll-tidy
+markdown: kramdown
+google_analytics: true
+highlighter: rouge
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  style: expanded
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "base"
