@@ -4,11 +4,9 @@
   "description": "",
   "author": "robertakarobin",
   "license": "ISC",
-  "scripts": {
-    "build": "npx gulp build"
-  },
   "devDependencies": {
     "del": "^4.0.0",
+    "get-google-fonts": "^1.1.2",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-js-import": "^1.0.6",

@@ -1,6 +1,7 @@
 const {src, dest, parallel, series, watch} = require('gulp')
 const sass = require('gulp-sass')
 const jsImport = require('gulp-js-import')
+const getGoogleFonts = require('get-google-fonts')
 
 const {exec} = require('child_process')
 const del = require('del')
@@ -30,10 +31,27 @@ function buildMedia(){
 	.pipe(dest('./jekyll-src/assets/media'))
 }
 
+function buildFonts(){
+	const getFont = new getGoogleFonts({
+		outputDir: './jekyll-src/assets/fonts/',
+		verbose: true
+	})
+	return getFont.download([
+		{
+			'Germania One': [400]
+		}
+	])
+}
+
 exports.build = series([
 	()=>del(['./jekyll-src/assets']),
 	buildCSS,
 	buildJS,
 	buildMedia,
+	buildFonts,
 	()=>exec('bundle exec jekyll build -s jekyll-src -d ./_site')
+])
+
+exports.serve = series([
+	()=>exec('bundle exec jekyll serve -s jekyll-src -d ./_site')
 ])

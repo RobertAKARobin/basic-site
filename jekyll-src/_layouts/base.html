@@ -16,7 +16,12 @@
 	<!-- <link rel="shortcut icon" href="" type="image/png"/> -->
 	<!-- <link rel="apple-touch-icon" href="" type="image/png"/> -->
 
-	<link rel="stylesheet" href="/assets/css/styles.css" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+    {% if jekyll.environment == 'production' %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania+One:400&subset=latin" />
+    {% else %}
+    <link rel="stylesheet" href="/assets/fonts/fonts.css" />
+    {% endif %}
 </head>
 <body>
 	{{ content }}
