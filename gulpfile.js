@@ -55,3 +55,19 @@ exports.build = series([
 exports.serve = series([
 	()=>exec('bundle exec jekyll serve -s jekyll-src -d ./_site')
 ])
+
+exports.watch = ()=>{
+	exec('bundle exec jekyll serve -s jekyll-src -d ./_site')
+	return watch(
+		'./gulp-src/**',
+		{ignoreInitial: false},
+		series([
+			()=>del([
+				'./jekyll-src/assets/css',
+				'./jekyll-src/assets/js'
+			]),
+			buildCSS,
+			buildJS
+		])
+	)
+}
