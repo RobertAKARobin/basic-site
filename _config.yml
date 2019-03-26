@@ -1,5 +1,5 @@
 source: jekyll-src
-destination: _site
+destination: docs
 include: 
   - _pages
 plugins:
