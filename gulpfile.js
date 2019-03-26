@@ -1,6 +1,6 @@
 const {src, dest, parallel, series, watch} = require('gulp')
 const sass = require('gulp-sass')
-const concat = require('gulp-concat')
+const jsImport = require('gulp-js-import')
 
 const {exec} = require('child_process')
 const del = require('del')
@@ -16,18 +16,11 @@ function buildCSS(){
 
 function buildJS(){
 	return src([
-		'./gulp-src/js/**'
+		'./gulp-src/js/**/*',
+		'!./gulp-src-/js/**/_*'
 	], {base: './gulp-src/js'})
-	.pipe(concat('main.js'))
+	.pipe(jsImport())
 	.pipe(dest('./jekyll-src/assets/js'))
-}
-
-function buildVendorJS(){
-	return src([
-		'./node_modules/jquery/dist/jquery.min.js'
-	])
-	.pipe(concat('vendor.js'))
-	.pipe(dest('./jekyll-src/assets/vendor'))
 }
 
 function buildMedia(){
@@ -41,7 +34,6 @@ exports.build = series([
 	()=>del(['./jekyll-src/assets']),
 	buildCSS,
 	buildJS,
-	buildVendorJS,
 	buildMedia,
 	()=>exec('bundle exec jekyll build -s jekyll-src -d ./_site')
 ])
