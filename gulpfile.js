@@ -18,7 +18,7 @@ function buildCSS(){
 function buildJS(){
 	return src([
 		'./gulp-src/js/**/*',
-		'!./gulp-src-/js/**/_*'
+		'!./gulp-src/js/**/_*'
 	], {base: './gulp-src/js'})
 	.pipe(jsImport())
 	.pipe(dest('./jekyll-src/assets/js'))
@@ -43,23 +43,15 @@ function buildFonts(){
 	])
 }
 
-exports.build = series([
+exports.start = series([
 	()=>del(['./jekyll-src/assets']),
-	buildCSS,
-	buildJS,
 	buildMedia,
 	buildFonts,
-	()=>exec('bundle exec jekyll build')
-])
-
-exports.serve = series([
-	()=>exec('bundle exec jekyll serve')
-])
-
-exports.start = ()=>{
-	exec('bundle exec jekyll serve')
-	return watch(
-		'./gulp-src/**',
+	()=>watch(
+		[
+			'./gulp-src/css/**',
+			'./gulp-src/js/**'
+		],
 		{ignoreInitial: false},
 		series([
 			()=>del([
@@ -70,4 +62,4 @@ exports.start = ()=>{
 			buildJS
 		])
 	)
-}
+])
