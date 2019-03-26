@@ -1,0 +1,17 @@
+{
+  "name": "basic-blog",
+  "version": "0.0.1",
+  "description": "",
+  "author": "robertakarobin",
+  "license": "ISC",
+  "scripts": {
+    "build": "npx gulp build"
+  },
+  "devDependencies": {
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.3.1"
+  }
+}
