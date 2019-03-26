@@ -1,3 +1,5 @@
+source: jekyll-src
+destination: _site
 include: 
   - _pages
 plugins:

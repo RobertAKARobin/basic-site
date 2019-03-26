@@ -49,15 +49,15 @@ exports.build = series([
 	buildJS,
 	buildMedia,
 	buildFonts,
-	()=>exec('bundle exec jekyll build -s jekyll-src -d ./_site')
+	()=>exec('bundle exec jekyll build')
 ])
 
 exports.serve = series([
-	()=>exec('bundle exec jekyll serve -s jekyll-src -d ./_site')
+	()=>exec('bundle exec jekyll serve')
 ])
 
-exports.watch = ()=>{
-	exec('bundle exec jekyll serve -s jekyll-src -d ./_site')
+exports.start = ()=>{
+	exec('bundle exec jekyll serve')
 	return watch(
 		'./gulp-src/**',
 		{ignoreInitial: false},
