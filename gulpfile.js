@@ -43,7 +43,7 @@ exports.buildFonts = function buildFonts(){
 	])
 }
 
-exports.watchBuild = function watchBuild(){
+exports.watch = function watchBuild(){
 	watch(
 		[
 			'_data',
@@ -53,20 +53,20 @@ exports.watchBuild = function watchBuild(){
 			'./gulp-src/js/**'
 		],
 		{ignoreInitial: false},
-		series([
-			()=>del([
-				'./_assets/css',
-				'./_assets/js'
-			]),
-			exports.buildCSS,
-			exports.buildJS,
-			exports.jekyll
-		])
+		exports.build()
 	)
 }
 
-exports.clean = async function clean(){
-	await del(['./_assets'])
+exports.build = function buildAll(){
+	return series([
+		()=>del([
+			'./_assets/css',
+			'./_assets/js'
+		]),
+		exports.buildCSS,
+		exports.buildJS,
+		exports.jekyll
+	])
 }
 
 exports.jekyll = async function jekyll(){
@@ -74,16 +74,13 @@ exports.jekyll = async function jekyll(){
 		.stdio.forEach(io=>io.on('data', console.log))
 }
 
-exports.serve = async function(){
-	await exec('npx hs _site -p 8080')
+exports.clean = async function clean(){
+	await del(['./_assets'])
 }
 
-exports.start = parallel([
-	exports.serve,
-	series([
-		exports.clean,
-		exports.buildMedia,
-		exports.buildFonts,
-		exports.watchBuild
-	])
+exports.start = series([
+	exports.clean,
+	exports.buildMedia,
+	exports.buildFonts,
+	exports.watch
 ])
