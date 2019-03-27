@@ -43,24 +43,27 @@ function buildFonts(){
 	])
 }
 
-exports.start = series([
-	()=>del(['./_assets']),
-	buildMedia,
-	buildFonts,
-	()=>watch(
-		[
-			'./gulp-src/css/**',
-			'./gulp-src/js/**'
-		],
-		{ignoreInitial: false},
-		series([
-			()=>del([
-				'./_assets/css',
-				'./_assets/js'
-			]),
-			buildCSS,
-			buildJS,
-			()=>exec('bundle exec jekyll build')
-		])
-	)
+exports.start = parallel([
+	()=>exec('npx hs docs'),
+	series([
+		()=>del(['./_assets']),
+		buildMedia,
+		buildFonts,
+		()=>watch(
+			[
+				'./gulp-src/css/**',
+				'./gulp-src/js/**'
+			],
+			{ignoreInitial: false},
+			series([
+				()=>del([
+					'./_assets/css',
+					'./_assets/js'
+				]),
+				buildCSS,
+				buildJS,
+				()=>exec('bundle exec jekyll build')
+			])
+		)
+	])
 ])
