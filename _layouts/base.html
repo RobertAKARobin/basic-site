@@ -16,13 +16,19 @@
 	<!-- <link rel="shortcut icon" href="" type="image/png"/> -->
 	<!-- <link rel="apple-touch-icon" href="" type="image/png"/> -->
 
-	<script src="/_assets/js/main.js"></script>
-	<link rel="stylesheet" href="/_assets/css/main.css" />
-    {% if jekyll.environment == 'production' %}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania+One:400&subset=latin" />
-    {% else %}
-    <link rel="stylesheet" href="/_assets/fonts/fonts.css" />
-    {% endif %}
+	{% if jekyll.environment == 'production'} %}
+	<base href="{{ site.data.meta.url }}" />
+	{% else %}
+	<base href="http://localhost:8080" />
+	{% endif %}
+
+	<script src="_assets/js/main.js"></script>
+	<link rel="stylesheet" href="_assets/css/main.css" />
+	{% if jekyll.environment == 'production' %}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania+One:400&subset=latin" />
+	{% else %}
+	<link rel="stylesheet" href="_assets/fonts/fonts.css" />
+	{% endif %}
 </head>
 <body>
 	{{ content }}

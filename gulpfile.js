@@ -44,13 +44,16 @@ function buildFonts(){
 }
 
 exports.start = parallel([
-	()=>exec('npx hs docs'),
+	()=>exec('npx hs docs -p 8080'),
 	series([
 		()=>del(['./_assets']),
 		buildMedia,
 		buildFonts,
 		()=>watch(
 			[
+				'_data',
+				'_layouts',
+				'_pages',
 				'./gulp-src/css/**',
 				'./gulp-src/js/**'
 			],
@@ -62,7 +65,7 @@ exports.start = parallel([
 				]),
 				buildCSS,
 				buildJS,
-				()=>exec('bundle exec jekyll build')
+				()=>exec('bundle exec jekyll build --incremental')
 			])
 		)
 	])
