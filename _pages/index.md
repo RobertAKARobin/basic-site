@@ -1,5 +1,4 @@
 ---
 permalink: /
 ---
-
-# Test
+# Explain Programmer Humor
