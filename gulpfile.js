@@ -59,7 +59,8 @@ exports.start = series([
 				'./_assets/js'
 			]),
 			buildCSS,
-			buildJS
+			buildJS,
+			()=>exec('bundle exec jekyll build')
 		])
 	)
 ])

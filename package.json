@@ -10,6 +10,7 @@
     "gulp": "^4.0.0",
     "gulp-js-import": "^1.0.6",
     "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1",
     "jquery": "^3.3.1"
   }
 }
