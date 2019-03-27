@@ -6,7 +6,7 @@ const getGoogleFonts = require('get-google-fonts')
 const {exec} = require('child_process')
 const del = require('del')
 
-function buildCSS(){
+exports.buildCSS = function buildCSS(){
 	return src([
 		'./gulp-src/css/**/*',
 		'!./gulp-src/css/**/_*'
@@ -15,7 +15,7 @@ function buildCSS(){
 	.pipe(dest('./_assets/css'))
 }
 
-function buildJS(){
+exports.buildJS = function buildJS(){
 	return src([
 		'./gulp-src/js/**/*',
 		'!./gulp-src/js/**/_*'
@@ -24,14 +24,14 @@ function buildJS(){
 	.pipe(dest('./_assets/js'))
 }
 
-function buildMedia(){
+exports.buildMedia = function buildMedia(){
 	return src([
 		'./gulp-src/media/**'
 	], {base: './gulp-src/media'})
 	.pipe(dest('./_assets/media'))
 }
 
-function buildFonts(){
+exports.buildFonts = function buildFonts(){
 	const getFont = new getGoogleFonts({
 		outputDir: './_assets/fonts/',
 		verbose: true
@@ -43,30 +43,47 @@ function buildFonts(){
 	])
 }
 
+exports.watchBuild = function watchBuild(){
+	watch(
+		[
+			'_data',
+			'_layouts',
+			'_pages',
+			'./gulp-src/css/**',
+			'./gulp-src/js/**'
+		],
+		{ignoreInitial: false},
+		series([
+			()=>del([
+				'./_assets/css',
+				'./_assets/js'
+			]),
+			exports.buildCSS,
+			exports.buildJS,
+			exports.jekyll
+		])
+	)
+}
+
+exports.clean = async function clean(){
+	await del(['./_assets'])
+}
+
+exports.jekyll = async function jekyll(){
+	await exec('bundle exec jekyll build')
+		.stdio.forEach(io=>io.on('data', console.log))
+}
+
+exports.serve = async function(){
+	await exec('npx hs _site -p 8080')
+}
+
 exports.start = parallel([
-	()=>exec('npx hs _site -p 8080'),
+	exports.serve,
 	series([
-		()=>del(['./_assets']),
-		buildMedia,
-		buildFonts,
-		()=>watch(
-			[
-				'_data',
-				'_layouts',
-				'_pages',
-				'./gulp-src/css/**',
-				'./gulp-src/js/**'
-			],
-			{ignoreInitial: false},
-			series([
-				()=>del([
-					'./_assets/css',
-					'./_assets/js'
-				]),
-				buildCSS,
-				buildJS,
-				()=>exec('bundle exec jekyll build')
-			])
-		)
+		exports.clean,
+		exports.buildMedia,
+		exports.buildFonts,
+		exports.watchBuild
 	])
 ])
