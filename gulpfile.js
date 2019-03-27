@@ -44,7 +44,7 @@ function buildFonts(){
 }
 
 exports.start = parallel([
-	()=>exec('npx hs docs -p 8080'),
+	()=>exec('npx hs _site -p 8080'),
 	series([
 		()=>del(['./_assets']),
 		buildMedia,
