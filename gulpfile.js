@@ -65,7 +65,7 @@ exports.start = parallel([
 				]),
 				buildCSS,
 				buildJS,
-				()=>exec('bundle exec jekyll build --incremental')
+				()=>exec('bundle exec jekyll build')
 			])
 		)
 	])
