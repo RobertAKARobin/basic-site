@@ -12,7 +12,7 @@ function buildCSS(){
 		'!./gulp-src/css/**/_*'
 	], {base: './gulp-src/css'})
 	.pipe(sass({outputStyle: 'expanded'}))
-	.pipe(dest('./jekyll-src/assets/css'))
+	.pipe(dest('./_assets/css'))
 }
 
 function buildJS(){
@@ -21,19 +21,19 @@ function buildJS(){
 		'!./gulp-src/js/**/_*'
 	], {base: './gulp-src/js'})
 	.pipe(jsImport())
-	.pipe(dest('./jekyll-src/assets/js'))
+	.pipe(dest('./_assets/js'))
 }
 
 function buildMedia(){
 	return src([
 		'./gulp-src/media/**'
 	], {base: './gulp-src/media'})
-	.pipe(dest('./jekyll-src/assets/media'))
+	.pipe(dest('./_assets/media'))
 }
 
 function buildFonts(){
 	const getFont = new getGoogleFonts({
-		outputDir: './jekyll-src/assets/fonts/',
+		outputDir: './_assets/fonts/',
 		verbose: true
 	})
 	return getFont.download([
@@ -44,7 +44,7 @@ function buildFonts(){
 }
 
 exports.start = series([
-	()=>del(['./jekyll-src/assets']),
+	()=>del(['./_assets']),
 	buildMedia,
 	buildFonts,
 	()=>watch(
@@ -55,8 +55,8 @@ exports.start = series([
 		{ignoreInitial: false},
 		series([
 			()=>del([
-				'./jekyll-src/assets/css',
-				'./jekyll-src/assets/js'
+				'./_assets/css',
+				'./_assets/js'
 			]),
 			buildCSS,
 			buildJS

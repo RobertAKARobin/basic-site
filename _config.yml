@@ -1,7 +1,16 @@
-source: jekyll-src
+source: .
 destination: docs
 include: 
   - _pages
+  - _assets
+exclude:
+  - gulp-src
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
 plugins:
   - jekyll-tidy
 markdown: kramdown
