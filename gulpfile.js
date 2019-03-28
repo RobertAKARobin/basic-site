@@ -49,6 +49,7 @@ exports.watch = function watchBuild(){
 			'_layouts',
 			'_pages',
 			'_posts',
+			'_assets/images',
 			'./gulp-src/css/**',
 			'./gulp-src/js/**'
 		],

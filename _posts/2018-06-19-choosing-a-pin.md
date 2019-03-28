@@ -8,9 +8,9 @@ tags:
 - humor
 - array
 - security
+image: choosing-a-pin.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8opebi/choosing_a_pin/
 ---
-![https://i.imgur.com/rn43WGH.jpg](https://i.imgur.com/rn43WGH.jpg)
 
 In programming, an _array_ is a collection of pieces of data. It’s usually thought of as a list. For example, an array of fruits might look like this:
 

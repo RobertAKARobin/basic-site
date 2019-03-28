@@ -7,9 +7,9 @@ tags:
 - programming
 - humor
 - javascript
+image: alternative-math.gif
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8og732/alternative_math/
 ---
-![https://thumbs.gfycat.com/OffensiveFarflungBluefish-size_restricted.gif](https://thumbs.gfycat.com/OffensiveFarflungBluefish-size_restricted.gif)
 
 There are some situations when you want to put numbers together _without_ adding them. For example, let’s say you pick up a piece of paper that says:
 

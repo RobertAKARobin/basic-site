@@ -7,9 +7,9 @@ tags:
 - programming
 - humor
 - code
+image: the-worst-mistake.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8o9h2f/the_worst_mistake/
 ---
-![https://i.redd.it/g2oqpgmy3t111.png](https://i.redd.it/g2oqpgmy3t111.png)
 
 _Compiling_ is the process of converting your code (easy-ish for you to read and understand, but difficult for a computer to understand) into “bytecode” or “machine code” (virtually impossible for a human to read and understand, but much easier for a computer to understand).
 

@@ -8,9 +8,9 @@ tags:
 - humor
 - stack overflow
 - code
+image: heckoverflow.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/83vsie/heckoverflow/
 ---
-![https://i.redd.it/2k1ut81gpcl01.png](https://i.redd.it/2k1ut81gpcl01.png)
 
 Stack Overflow is a website on which programmers can ask and answer questions related to code. (It has been expanded to many other subjects as well, such as home improvement and personal finance.) Questions and answers can be voted “up” and “down,” depending on their perceived quality. They can also be commented on.
 
