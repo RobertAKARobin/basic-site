@@ -21,18 +21,10 @@
 	{% else %}
 	<base href="http://localhost:4000" />
 	{% endif %}
-
-	<script src="_assets/js/main.js"></script>
 	<link rel="stylesheet" href="_assets/css/main.css" />
-	{% if jekyll.environment == 'production' %}
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania+One:400&subset=latin" />
-	{% else %}
-	<link rel="stylesheet" href="_assets/fonts/fonts.css" />
-	{% endif %}
 </head>
 <body>
 	{{ content }}
-
 
 	{% if jekyll.environment == 'production' and site.google_analytics %}
 	<script>
