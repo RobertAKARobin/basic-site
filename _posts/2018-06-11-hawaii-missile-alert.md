@@ -1,5 +1,4 @@
 ---
-layout: post
 title: You're all wrong. This is why it happened.
 tags:
 - java
@@ -13,7 +12,7 @@ It turned out this was all due to a state employee meaning to click on a ‘Send
 
 **Java** is a programming language. Virtually every personal computer runs software written in Java, and so every once in a while the computer’s user will be prompted to update their system to better run Java.
 
-The company that owns Java, Oracle, sold advertising space in the Java installer/updater, and started including ads like the one pictured here for a “taskbar” created by Ask.com. Taskbars are plug-ins that you can add to your web browser that give you quick access to a few features or websites (in this case, Ask.com’s search engine, Facebook, a music player, and a weather display).
+The company that owns Java, Oracle, sold advertising space in the Java installer/updater, and started including ads like the one pictured here for a "taskbar" created by Ask.com. Taskbars are plug-ins that you can add to your web browser that give you quick access to a few features or websites (in this case, Ask.com’s search engine, Facebook, a music player, and a weather display).
 
 This has caused a lot of eye-rolling among programmers for a few reasons. First, although Ask.com was once a popular search engine (also known as AskJeeves) it is now largely obsolete. Second, taskbars are notorious for adding adware and malware to computers that slow them down, and should always be avoided. Third, selling ad space in an installer like this is seen as really sleazy, like selling ad space in a hospital bill.
 

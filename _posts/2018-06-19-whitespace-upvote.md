@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Everyone Should Know Which is Which
 tags:
 - tabs vs spaces
@@ -25,11 +24,11 @@ When programming, in order to keep your code readable, it is recommended to inde
     </header>
     </page>
 
-The indentation of the first snippet provides visual cues that the “title” is inside the “header,” and that the “header” is inside the “page.” Indentation doesn’t affect the performance of your code at all, but many developers would say that whether or not your code is readable is almost as important as whether or not it works.
+The indentation of the first snippet provides visual cues that the "title" is inside the "header," and that the "header" is inside the "page." Indentation doesn’t affect the performance of your code at all, but many developers would say that whether or not your code is readable is almost as important as whether or not it works.
 
 In the above example, I indented using two spaces per level of indentation. Alternatively, I could have used four spaces, or tabs, or something else. Different programmers have different preferences about which method of indentation is best.
 
-This debate is often summed up as “tabs vs spaces.” It’s a source of many programming jokes since the arguments often get fairly heated, even though the kind of indentation doesn’t affect code’s performance at all.
+This debate is often summed up as "tabs vs spaces." It’s a source of many programming jokes since the arguments often get fairly heated, even though the kind of indentation doesn’t affect code’s performance at all.
 
 If tabs and spaces are used for the upvote and downvote icons, the one used for upvotes would be implied to be superior to the one used for downvotes.
 

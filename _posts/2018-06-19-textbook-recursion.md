@@ -1,5 +1,4 @@
 ---
-layout: post
 title: This textbook understands recursion
 tags:
 - computer science

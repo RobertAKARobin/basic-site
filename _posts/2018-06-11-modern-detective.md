@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Every modern detective show
 tags:
 image: modern-detective.png
