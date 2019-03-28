@@ -8,7 +8,7 @@ tags:
 - humor
 - array
 - security
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175044661310/choosing-a-pin
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8opebi/choosing_a_pin/
 ---
 ![https://i.imgur.com/rn43WGH.jpg](https://i.imgur.com/rn43WGH.jpg)
 
@@ -25,6 +25,3 @@ Arrays being “zero-indexed” like this is a source of many programming jokes:
 A PIN (a number used to access something, like a bank account or debit card) should be hard to guess. But many people simply choose “1234” for convenience.
 
 **The joke is** two-fold: first, the author has decided to “zero-index” their PIN by counting up from 0 (`0123`) instead of from 1 (`1234`), which is completely unnecessary but makes them look more “programmer-y.” Second, one would expect someone trying to look “programmer-y” to be conscious about having a secure PIN, but the author has chosen a tremendously insecure PIN.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8opebi/choosing\_a\_pin/](https://www.reddit.com/r/ProgrammerHumor/comments/8opebi/choosing_a_pin/)
-

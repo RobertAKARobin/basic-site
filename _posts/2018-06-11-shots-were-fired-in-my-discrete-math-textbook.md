@@ -7,13 +7,10 @@ tags:
 - programming
 - humor
 - logic
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/174793721830/shots-were-fired-in-my-discrete-math-textbook
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8ek3ot/shots\_were\_fired\_in\_my\_discrete\_math\_textbook/
 ---
 ![https://i.redd.it/x9vlbv8frut01.jpg](https://i.redd.it/x9vlbv8frut01.jpg)
 
 A _tree_ is a way of visualizing a sequence of events, decisions, or data that “belongs” to other data (like a family tree). The one shown here demonstrates that a series of 3 yes-or-no questions can be answered in 8 different ways. This kind of diagram is useful when figuring out how to make a computer program respond to different kinds of user data, for example.
 
 **The joke is** that the scientists who created this way of visualizing data didn’t name it properly: they were so stereotypically nerdy they didn’t go outside enough to know that a tree spreads out as a it goes _up_, not _down_.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8ek3ot/shots\_were\_fired\_in\_my\_discrete\_math\_textbook/](https://www.reddit.com/r/ProgrammerHumor/comments/8ek3ot/shots_were_fired_in_my_discrete_math_textbook/)
-

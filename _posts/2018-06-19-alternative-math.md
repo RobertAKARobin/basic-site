@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - javascript
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175045460830/alternative-math
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8og732/alternative_math/
 ---
 ![https://thumbs.gfycat.com/OffensiveFarflungBluefish-size_restricted.gif](https://thumbs.gfycat.com/OffensiveFarflungBluefish-size_restricted.gif)
 
@@ -28,6 +28,3 @@ However, the JavaScript language has very loose rules about a lot of things, inc
 In this scene, JavaScript (the child) sees `2 + 2` and thinks it should be concatenating these numbers, making `22`, when obviously it should be summing them as `4`.
 
 **The joke is** that JavaScript is often seen as “doing its own thing” compared to other languages, and getting it to do exactly what you want can be complicated.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8og732/alternative\_math/](https://www.reddit.com/r/ProgrammerHumor/comments/8og732/alternative_math/)
-

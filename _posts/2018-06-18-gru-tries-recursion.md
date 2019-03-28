@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - recursion
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175010733305/gru-tries-recursion
+source: https://www.reddit.com/r/ProgrammerHumor/comments/85a6n7/gru\_tries\_recursion/
 ---
 ![https://i.redd.it/0wap3cp4khm01.jpg](https://i.redd.it/0wap3cp4khm01.jpg)
 
@@ -23,6 +23,3 @@ This piece of code called `getMothersName` causes itself to run. It would first 
 A recursive function will keep triggering itself until it runs into some sort of error or an _exit condition_ that makes it stop (e.g. “stop if the mother’s name is ‘Eve’ or 'Gaia’ or 'Eru’ or 'single-celled proto-organism’”).
 
 **The joke is** that Gru (from the 'Despicable Me’ movies) has created a plan to implement a recursive function, but the plan itself is recursive, causing Gru and the comic to keep repeating into infinity.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/85a6n7/gru\_tries\_recursion/](https://www.reddit.com/r/ProgrammerHumor/comments/85a6n7/gru_tries_recursion/)
-

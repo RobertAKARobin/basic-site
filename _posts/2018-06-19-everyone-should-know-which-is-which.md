@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - code
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175045595000/everyone-should-know-which-is-which
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8ng9oj/everyone_should_know_which_is_which/
 ---
 ![https://i.redd.it/rxp25bbq05111.png](https://i.redd.it/rxp25bbq05111.png)
 
@@ -38,6 +38,3 @@ This debate is often summed up as “tabs vs spaces.” It’s a source of many 
 If tabs and spaces are used for the upvote and downvote icons, the one used for upvotes would be implied to be superior to the one used for downvotes.
 
 **The joke is** two-fold: tabs and spaces are invisible, so not only are they completely impractical for upvote/downvote icons, but also the author has managed to stir up controversy while keeping his/her opinion completely hidden since you can’t see which indentation was assigned to which icon.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8ng9oj/everyone\_should\_know\_which\_is\_which/](https://www.reddit.com/r/ProgrammerHumor/comments/8ng9oj/everyone_should_know_which_is_which/)
-

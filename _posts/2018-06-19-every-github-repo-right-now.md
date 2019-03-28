@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - github
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175045433000/every-github-repo-right-now
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8ocma6/every_github_repo_right_now/
 ---
 ![https://i.redd.it/k55vv0e3dv111.jpg](https://i.redd.it/k55vv0e3dv111.jpg)
 
@@ -16,6 +16,3 @@ Git and GitHub are often confused. **Git** is basically a piece of software. It 
 In mid-2018 it was announced that Microsoft appears to be buying GitHub. Microsoft is frequently perceived as a sort-of “Big Brother” character in technology, with a tendency to take absorb products and then make them worse (e.g. Skype). Whether or not this perception is warranted is very much a matter of opinion.
 
 The joke here is that many GitHub users are expecting Microsoft to make GitHub worse, and so are eyeing alternatives like GitLab, to Microsoft’s dismay.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8ocma6/every\_github\_repo\_right\_now/](https://www.reddit.com/r/ProgrammerHumor/comments/8ocma6/every_github_repo_right_now/)
-

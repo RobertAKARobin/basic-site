@@ -9,11 +9,9 @@ tags:
 - java
 - oracle
 - hawaii
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/174790268755/youre-all-wrong-this-is-why-it-happened
+source: https://www.reddit.com/r/ProgrammerHumor/comments/7r17en/youre\_all\_wrong\_this\_is\_why\_it\_happened/
 ---
 ![https://i.redd.it/e3w944wmyma01.png](https://i.redd.it/e3w944wmyma01.png)
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/7r17en/youre\_all\_wrong\_this\_is\_why\_it\_happened/](https://www.reddit.com/r/ProgrammerHumor/comments/7r17en/youre_all_wrong_this_is_why_it_happened/)
 
 In early 2018 an emergency message was broadcast across the state of Hawaii, alerting the population to an incoming ballistic missile. This sent the state into a panic, until a little while later a follow-up message clarified that there was _no_ incoming missile, and that it was simply a test alert.
 

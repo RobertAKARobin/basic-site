@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - recursion
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175045549540/this-textbook-understands-recursion
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8nhawy/this_textbook_understands_recursion/
 ---
 ![https://i.redd.it/53hb6r5046111.jpg](https://i.redd.it/53hb6r5046111.jpg)
 
@@ -25,6 +25,3 @@ This piece of code called `getMothersName` causes itself to run. It would first 
 Recursive code will go on forever until it runs into some sort of error or condition that makes it stop. (Often this is the computer running out of memory, if the recursive code has been written carelessly.)
 
 **The joke is** that this textbook’s cover is recursive: the textbook contains a picture of students holding the textbook, which contains a picture of students holding the textbook, theoretically going on into infinity (although the picture would quickly become too small to see).
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8nhawy/this\_textbook\_understands\_recursion/](https://www.reddit.com/r/ProgrammerHumor/comments/8nhawy/this_textbook_understands_recursion/)
-

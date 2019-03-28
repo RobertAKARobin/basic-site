@@ -7,7 +7,7 @@ tags:
 - programming
 - humor
 - database
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/174794325645/lpt-how-to-wake-up-in-the-morning
+source: https://www.reddit.com/r/ProgrammerHumor/comments/7dtfod/lpt_how_to_wake_up_in_the_morning/
 ---
 ![https://i.redd.it/ri96s0xu1ryz.jpg](https://i.redd.it/ri96s0xu1ryz.jpg)
 
@@ -20,6 +20,3 @@ When creating an application with a database, it’s a good practice to actually
 For example, if you’re a programmer for a bank, you wouldn’t want to use the production database to test out a piece of code that renames a bank account: you might accidentally rename the bank accounts of _all your customers_.
 
 **The joke is** deleting a table in a production database is terrifying because the action typically can’t be reversed – when the data is gone, it’s gone forever – so doing it will give you a rush of adrenaline.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/7dtfod/lpt\_how\_to\_wake\_up\_in\_the\_morning/](https://www.reddit.com/r/ProgrammerHumor/comments/7dtfod/lpt_how_to_wake_up_in_the_morning/)
-

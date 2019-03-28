@@ -8,7 +8,7 @@ tags:
 - humor
 - cake
 - linux
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/174794064810/happy-birthday-linux
+source: https://www.reddit.com/r/ProgrammerHumor/comments/6hhfah/happy\_birthday\_linux/
 ---
 ![https://i.redd.it/org2j5jv4v3z.jpg](https://i.redd.it/org2j5jv4v3z.jpg)
 
@@ -17,6 +17,3 @@ Linux is one of the “big three” operating systems, alongside Mac OS and Wind
 As a result, Linux is the least popular of those three operating systems for personal computers, but the most popular for webservers, microcomputers (like Raspberry Pi and Arduino), and other more behind-the-scenes uses.
 
 **The joke is** that setting up (or ‘compiling’) Linux is so much work, it’s like telling someone you’re going to give them a cake and then just giving them ingredients to make a cake.
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/6hhfah/happy\_birthday\_linux/](https://www.reddit.com/r/ProgrammerHumor/comments/6hhfah/happy_birthday_linux/)
-

@@ -6,7 +6,7 @@ tags:
 - programmer humor
 - programming
 - humor
-tumblr_url: https://explainprogrammerhumor.tumblr.com/post/175045527445/progress-so-far
+source: https://www.reddit.com/r/ProgrammerHumor/comments/8nd19s/progress_so_far/
 ---
 ![https://i.redd.it/dv760fqzn2111.jpg](https://i.redd.it/dv760fqzn2111.jpg)
 
@@ -15,6 +15,3 @@ The first step in creating a web app is usually to pick a “framework” in whi
 When you run a web app on your computer (as opposed to running it on a server somewhere so that it is publicly available on the Web) you will probably access it through a special web address that begins with `localhost:` (as opposed to the usual `http://` or `https://`). It is called this because your app is being **host** ed on your **local** computer.
 
 **The joke is** that the developer appears to have barely started creating their web app, instead just doing the bare minimum to get “Hello world” to display on their computer, which probably took less than 2 minutes. If their aim is to create a successful startup, this could hardly be considered “great so far.”
-
-> Source: [https://www.reddit.com/r/ProgrammerHumor/comments/8nd19s/progress\_so\_far/](https://www.reddit.com/r/ProgrammerHumor/comments/8nd19s/progress_so_far/)
-
