@@ -48,6 +48,7 @@ exports.watch = function watchBuild(){
 			'_data',
 			'_layouts',
 			'_pages',
+			'_posts',
 			'./gulp-src/css/**',
 			'./gulp-src/js/**'
 		],
