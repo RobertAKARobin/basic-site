@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Shots were fired in my Discrete Math textbook
-date: '2018-06-11T14:13:37-05:00'
 tags:
 - programmer humor
 - programming

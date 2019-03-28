@@ -1,7 +1,6 @@
 ---
 layout: post
 title: HeckOverflow
-date: '2018-06-11T14:49:41-05:00'
 tags:
 - programmer humor
 - programmer

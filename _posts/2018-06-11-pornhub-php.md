@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Working at PornHub
-date: '2018-06-11T13:55:38-05:00'
 tags:
 - programmer humor
 - programming

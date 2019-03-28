@@ -1,7 +1,6 @@
 ---
 layout: post
 title: This textbook understands recursion
-date: '2018-06-19T12:21:34-05:00'
 tags:
 - programmer humor
 - programming

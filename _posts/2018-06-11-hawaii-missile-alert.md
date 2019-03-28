@@ -1,7 +1,6 @@
 ---
 layout: post
 title: You're all wrong. This is why it happened.
-date: '2018-06-11T11:53:26-05:00'
 tags:
 - programmer humor
 - programming

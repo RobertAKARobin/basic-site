@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Happy Birthday Linux!
-date: '2018-06-11T14:27:15-05:00'
 tags:
 - programmer humor
 - programming

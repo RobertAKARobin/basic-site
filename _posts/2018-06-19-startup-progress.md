@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Progress so far!
-date: '2018-06-19T12:20:36-05:00'
 tags:
 - programmer humor
 - programming

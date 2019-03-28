@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Gru tries recursion
-date: '2018-06-18T11:15:28-05:00'
 tags:
 - programmer humor
 - programming

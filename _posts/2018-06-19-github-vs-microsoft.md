@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Every Github repo right now
-date: '2018-06-19T12:16:36-05:00'
 tags:
 - programmer humor
 - programming

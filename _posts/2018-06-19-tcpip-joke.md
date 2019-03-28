@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Have you received this post?
-date: '2018-06-19T11:55:04-05:00'
 tags:
 - programmer humor
 - programming

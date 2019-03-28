@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Every modern detective show
-date: '2018-06-11T13:30:11-05:00'
 tags:
 - programmer humor
 - programming

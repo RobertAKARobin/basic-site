@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Alternative Math
-date: '2018-06-19T12:17:46-05:00'
 tags:
 - programmer humor
 - programming

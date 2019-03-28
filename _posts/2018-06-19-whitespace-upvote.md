@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Everyone Should Know Which is Which
-date: '2018-06-19T12:23:34-05:00'
 tags:
 - programmer humor
 - programming

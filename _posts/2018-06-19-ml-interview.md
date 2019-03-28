@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ML
-date: '2018-06-19T12:14:33-05:00'
 tags:
 - programmer humor
 - programming

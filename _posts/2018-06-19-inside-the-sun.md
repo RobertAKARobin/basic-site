@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Someone asks: What''s inside the Sun?'
-date: '2018-06-19T12:22:29-05:00'
 tags:
 - programmer humor
 - programming

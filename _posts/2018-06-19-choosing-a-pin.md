@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Choosing a PIN
-date: '2018-06-19T11:44:57-05:00'
 tags:
 - programmer humor
 - programming

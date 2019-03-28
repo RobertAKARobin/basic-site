@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'LPT: How to Wake Up in the Morning'
-date: '2018-06-11T14:37:56-05:00'
 tags:
 - programmer humor
 - programming
