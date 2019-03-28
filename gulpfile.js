@@ -6,41 +6,40 @@ const getGoogleFonts = require('get-google-fonts')
 const {exec} = require('child_process')
 const del = require('del')
 
-exports.buildCSS = function buildCSS(){
+exports.buildCSS = async function buildCSS(){
+	const outputDir = './_assets/css'
+	await del(outputDir)
 	return src([
 		'./gulp-src/css/**/*',
 		'!./gulp-src/css/**/_*'
 	], {base: './gulp-src/css'})
 	.pipe(sass({outputStyle: 'expanded'}))
-	.pipe(dest('./_assets/css'))
+	.pipe(dest(outputDir))
 }
 
-exports.buildJS = function buildJS(){
+exports.buildJS = async function buildJS(){
+	const outputDir = './_assets/js'
+	await del(outputDir)
 	return src([
 		'./gulp-src/js/**/*',
 		'!./gulp-src/js/**/_*'
 	], {base: './gulp-src/js'})
 	.pipe(jsImport())
-	.pipe(dest('./_assets/js'))
+	.pipe(dest(outputDir))
 }
 
-exports.buildMedia = function buildMedia(){
-	return src([
-		'./gulp-src/media/**'
-	], {base: './gulp-src/media'})
-	.pipe(dest('./_assets/media'))
-}
-
-exports.buildFonts = function buildFonts(){
-	const getFont = new getGoogleFonts({
-		outputDir: './_assets/fonts/',
-		verbose: true
-	})
-	return getFont.download([
-		{
-			'Germania One': [400]
-		}
-	])
+exports.buildFonts = async function buildFonts(){
+	const outputDir = './_assets/fonts'
+	await del(outputDir)
+	// const getFont = new getGoogleFonts({
+	// 	outputDir,
+	// 	verbose: true
+	// })
+	// return getFont.download([
+	// 	{
+	// 		'Germania One': [400]
+	// 	}
+	// ])
 }
 
 exports.watch = function watchBuild(){
@@ -59,10 +58,6 @@ exports.watch = function watchBuild(){
 
 exports.build = function buildAll(){
 	return series([
-		()=>del([
-			'./_assets/css',
-			'./_assets/js'
-		]),
 		exports.buildCSS,
 		exports.buildJS,
 		exports.jekyll
@@ -74,13 +69,7 @@ exports.jekyll = async function jekyll(){
 		.stdio.forEach(io=>io.on('data', console.log))
 }
 
-exports.clean = async function clean(){
-	await del(['./_assets'])
-}
-
 exports.start = series([
-	exports.clean,
-	exports.buildMedia,
 	exports.buildFonts,
 	exports.watch
 ])
