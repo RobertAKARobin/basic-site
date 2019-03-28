@@ -2,9 +2,7 @@
 layout: post
 title: Progress so far!
 tags:
-- programmer humor
-- programming
-- humor
+- startups
 image: startup-progress.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8nd19s/progress_so_far/
 ---

@@ -2,10 +2,7 @@
 layout: post
 title: Shots were fired in my Discrete Math textbook
 tags:
-- programmer humor
-- programming
-- humor
-- logic
+- computer science
 image: tree-shots-fired.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ek3ot/shots\_were\_fired\_in\_my\_discrete\_math\_textbook/
 ---

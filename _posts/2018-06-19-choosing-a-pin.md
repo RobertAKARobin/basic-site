@@ -2,11 +2,7 @@
 layout: post
 title: Choosing a PIN
 tags:
-- programmer humor
-- programming
-- humor
-- array
-- security
+- computer science
 image: choosing-a-pin.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8opebi/choosing_a_pin/
 ---

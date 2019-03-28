@@ -2,10 +2,7 @@
 layout: post
 title: Everyone Should Know Which is Which
 tags:
-- programmer humor
-- programming
-- humor
-- code
+- tabs vs spaces
 image: whitespace-upvote.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ng9oj/everyone_should_know_which_is_which/
 ---

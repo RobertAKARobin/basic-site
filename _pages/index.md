@@ -3,6 +3,7 @@ permalink: /
 ---
 # Explain Programmer Humor
 
-{% for post in site.posts %}
-{{ post.date }}
+{% assign sortedTags = site.tags | sort %}
+{% for tag in sortedTags %}
+{{ tag[0] }}
 {% endfor %}

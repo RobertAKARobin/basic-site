@@ -2,10 +2,8 @@
 layout: post
 title: Every Github repo right now
 tags:
-- programmer humor
-- programming
-- humor
 - github
+- microsoft
 image: github-vs-microsoft.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ocma6/every_github_repo_right_now/
 ---

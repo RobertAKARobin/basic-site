@@ -2,11 +2,7 @@
 layout: post
 title: HeckOverflow
 tags:
-- programmer humor
-- programmer
-- humor
 - stack overflow
-- code
 image: heckoverflow.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/83vsie/heckoverflow/
 ---

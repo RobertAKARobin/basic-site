@@ -2,9 +2,6 @@
 layout: post
 title: 'Someone asks: What''s inside the Sun?'
 tags:
-- programmer humor
-- programming
-- humor
 - java
 image: inside-the-sun.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ng0tg/someone_asks_whats_inside_the_sun/

@@ -2,9 +2,7 @@
 layout: post
 title: This textbook understands recursion
 tags:
-- programmer humor
-- programming
-- humor
+- computer science
 - recursion
 image: textbook-recursion.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8nhawy/this_textbook_understands_recursion/

@@ -2,10 +2,7 @@
 layout: post
 title: Have you received this post?
 tags:
-- programmer humor
-- programming
-- humor
-- internet
+- networking
 image: tcpip-joke.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ogw6n/have_you_recieved_this_post/
 ---

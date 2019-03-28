@@ -2,9 +2,7 @@
 layout: post
 title: Gru tries recursion
 tags:
-- programmer humor
-- programming
-- humor
+- computer science
 - recursion
 image: gru-recursion.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/85a6n7/gru\_tries\_recursion/

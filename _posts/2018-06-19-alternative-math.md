@@ -2,9 +2,6 @@
 layout: post
 title: Alternative Math
 tags:
-- programmer humor
-- programming
-- humor
 - javascript
 image: alternative-math.gif
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8og732/alternative_math/

@@ -2,11 +2,7 @@
 layout: post
 title: Working at PornHub
 tags:
-- programmer humor
-- programming
-- humor
 - php
-- porn
 image: pornhub-php.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/6k40cb/working_at_pornhub/
 ---

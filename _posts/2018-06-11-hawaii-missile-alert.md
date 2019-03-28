@@ -2,12 +2,7 @@
 layout: post
 title: You're all wrong. This is why it happened.
 tags:
-- programmer humor
-- programming
-- humor
 - java
-- oracle
-- hawaii
 image: hawaii-missile-alert.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/7r17en/youre\_all\_wrong\_this\_is\_why\_it\_happened/
 ---

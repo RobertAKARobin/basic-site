@@ -2,10 +2,6 @@
 layout: post
 title: Happy Birthday Linux!
 tags:
-- programmer humor
-- programming
-- humor
-- cake
 - linux
 image: happy-birthday-linux.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/6hhfah/happy\_birthday\_linux/

@@ -2,10 +2,7 @@
 layout: post
 title: The Worst Mistake
 tags:
-- programmer humor
-- programming
-- humor
-- code
+- compiling
 image: the-worst-mistake.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8o9h2f/the_worst_mistake/
 ---

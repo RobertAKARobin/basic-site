@@ -2,10 +2,7 @@
 layout: post
 title: ML
 tags:
-- programmer humor
-- programming
-- humor
-- machine learning
+- ai / machine learning
 image: ml-interview.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8ohuyo/ml/
 ---

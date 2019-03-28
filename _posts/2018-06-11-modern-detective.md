@@ -2,10 +2,6 @@
 layout: post
 title: Every modern detective show
 tags:
-- programmer humor
-- programming
-- humor
-- tv
 image: modern-detective.png
 source: https://www.reddit.com/r/ProgrammerHumor/comments/7n74m8/every\_modern\_detective\_show/
 ---
