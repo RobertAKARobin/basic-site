@@ -2,7 +2,7 @@
 title: 'LPT: How to Wake Up in the Morning'
 tags:
 - database
-images: how-to-wake-up.jpg
+image: how-to-wake-up.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/7dtfod/lpt_how_to_wake_up_in_the_morning/
 ---
 
