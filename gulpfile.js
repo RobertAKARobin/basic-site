@@ -14,6 +14,10 @@ exports.buildCSS = async function buildCSS(){
 		'!./gulp-src/css/**/_*'
 	], {base: './gulp-src/css'})
 	.pipe(sass({outputStyle: 'expanded'}))
+	.on('error', function (err) {
+		console.log(err.toString())
+		this.emit('end')
+	})
 	.pipe(dest(outputDir))
 }
 
