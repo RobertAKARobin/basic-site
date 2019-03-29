@@ -1,13 +1,24 @@
 <section>
 	<header>
 		<h2>{{ include.post.title }}</h2>
+		<p><time datetime="{{ include.post.date }}">{{ include.post.date | date: "%B %e, %Y" }}</time></p>
+
+		<figure>
+			<img src="_assets/images/{{ include.post.image }}" alt="{{ include.post.title }}" />
+		</figure>
 	</header>
 
-	<figure>
-		<img src="_assets/images/{{ include.post.image }}" alt="{{ include.post.title }}" />
-	</figure>
 
 	<div class="main">
 		{{ include.post.content | markdownify}}
 	</div>
+
+	<footer>
+		<ul class="tags">
+			{% for tag in include.post.tags %}
+			<li><a>#{{ tag }}</a></li>
+			{% endfor %}
+		</ul>
+		<p class="source">Source: <a href="{{ include.post.source }}">{{include.post.source}}</a></p>
+	</footer>
 </section>
