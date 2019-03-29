@@ -6,7 +6,6 @@ tags:
 image: textbook-recursion.jpg
 source: https://www.reddit.com/r/ProgrammerHumor/comments/8nhawy/this_textbook_understands_recursion/
 ---
-![https://i.redd.it/53hb6r5046111.jpg](https://i.redd.it/53hb6r5046111.jpg)
 
 Recursion is a programming concept that refers to a piece of code triggering itself. For example:
 
