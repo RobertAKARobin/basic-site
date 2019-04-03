@@ -1,0 +1,36 @@
+$font-base: 'Arial', sans-serif;
+$font-header: 'Georgia', serif;
+$font-mono: 'Courier', monospace;
+
+$main-radius: 3px;
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	font-size:inherit;
+	font-family:inherit;
+	font-weight:inherit;
+	font-style:inherit;
+	border-collapse:collapse;
+	text-decoration:inherit;
+	color:inherit;
+	list-style:none;
+}
+*:focus{
+	outline:none;
+}
+div, main, header, section, article{
+	position:relative;
+}
+
+:root{
+	font-family:$font-base;
+	font-size:16px;
+	line-height:1.6em;
+	font-weight:400;
+	color:#000;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:$font-header;
+}

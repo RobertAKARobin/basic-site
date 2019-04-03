@@ -1,11 +1,11 @@
 {
-  "name": "explainprogrammerhumor",
+  "name": "test",
   "version": "0.0.1",
   "description": "",
   "author": "robertakarobin",
   "license": "ISC",
   "scripts": {
-    "start": "npx hs _site -p 4000 --silent & npx gulp start"
+    "start": "npx hs docs -p 4000 --silent & npx gulp start"
   },
   "devDependencies": {
     "del": "^4.0.0",

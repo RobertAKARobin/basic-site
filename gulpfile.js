@@ -7,12 +7,12 @@ const {exec} = require('child_process')
 const del = require('del')
 
 exports.buildCSS = async function buildCSS(){
-	const outputDir = './_assets/css'
+	const outputDir = './docs/css'
 	await del(outputDir)
 	return src([
-		'./gulp-src/css/**/*',
-		'!./gulp-src/css/**/_*'
-	], {base: './gulp-src/css'})
+		'./src/css/**/*',
+		'!./src/css/**/_*'
+	], {base: './src/css'})
 	.pipe(sass({outputStyle: 'expanded'}))
 	.on('error', function (err) {
 		console.log(err.toString())
@@ -22,18 +22,31 @@ exports.buildCSS = async function buildCSS(){
 }
 
 exports.buildJS = async function buildJS(){
-	const outputDir = './_assets/js'
+	const outputDir = './docs/js'
 	await del(outputDir)
 	return src([
-		'./gulp-src/js/**/*',
-		'!./gulp-src/js/**/_*'
-	], {base: './gulp-src/js'})
+		'./src/js/**/*',
+		'!./src/js/**/_*'
+	], {base: './src/js'})
 	.pipe(jsImport())
 	.pipe(dest(outputDir))
 }
 
+exports.buildStatic = async function buildStatic(){
+	await del([
+		'./docs/**/*',
+		'!./docs/css',
+		'!./docs/js',
+		'!./docs/fonts'
+	])
+	return src([
+		'./src/static/**/*'
+	], {base: './src/static'})
+	.pipe(dest('./docs'))
+}
+
 exports.buildFonts = async function buildFonts(){
-	const outputDir = './_assets/fonts'
+	const outputDir = './docs/fonts'
 	await del(outputDir)
 	// const getFont = new getGoogleFonts({
 	// 	outputDir,
@@ -46,37 +59,28 @@ exports.buildFonts = async function buildFonts(){
 	// ])
 }
 
-exports.watch = function watchBuild(){
-	watch(
-		[
-			'_data',
-			'_layouts',
-			'_pages',
-			'_posts',
-			'_includes',
-			'_assets/images',
-			'./gulp-src/css/**',
-			'./gulp-src/js/**'
-		],
-		{ignoreInitial: false},
-		exports.build()
-	)
-}
-
 exports.build = function buildAll(){
 	return series([
 		exports.buildCSS,
 		exports.buildJS,
-		exports.jekyll
+		exports.buildFonts,
+		exports.buildStatic
 	])
-}
-
-exports.jekyll = async function jekyll(){
-	await exec('bundle exec jekyll build')
-		.stdio.forEach(io=>io.on('data', console.log))
 }
 
 exports.start = series([
 	exports.buildFonts,
-	exports.watch
+	()=>{
+		watch(
+			[
+				'./src/**/*'
+			],
+			{ignoreInitial: false},
+			series([
+				exports.buildStatic,
+				exports.buildCSS,
+				exports.buildJS
+			])
+		)
+	}
 ])
